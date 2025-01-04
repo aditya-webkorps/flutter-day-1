@@ -8,15 +8,20 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        title: Text(
+          "First App",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       backgroundColor: Color(0xFFb56762),
       body: SafeArea(
         child: ElevatedButton(
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.black26),
             onPressed: () {
               print("Button pressed");
             },
             child: Text(
-              "Press Me",
+              "Button Click",
               style: TextStyle(fontSize: 60, color: Colors.black12),
             )),
       ),
